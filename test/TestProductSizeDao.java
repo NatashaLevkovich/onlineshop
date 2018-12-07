@@ -1,5 +1,5 @@
-import DAO.ProductSizeDao;
-import DAO.impl.ProductSizeDaoImpl;
+import dao.ProductSizeDao;
+import dao.impl.ProductSizeDaoImpl;
 import db.ConnectionDB;
 import entities.ProductSize;
 import org.junit.Assert;

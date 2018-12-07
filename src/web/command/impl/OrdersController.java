@@ -1,7 +1,7 @@
 package web.command.impl;
 
 import entities.Order;
-import entities.Dto.ProductDto;
+import entities.dto.ProductDto;
 import entities.Status;
 import entities.User;
 import services.OrderService;

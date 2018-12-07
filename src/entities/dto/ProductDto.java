@@ -1,4 +1,4 @@
-package entities.Dto;
+package entities.dto;
 
 public class ProductDto {
     private String name;

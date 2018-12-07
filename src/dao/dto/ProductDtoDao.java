@@ -1,7 +1,7 @@
-package DAO.Dto;
+package dao.dto;
 
-import DAO.impl.AbstractDao;
-import entities.Dto.ProductDto;
+import dao.impl.AbstractDao;
+import entities.dto.ProductDto;
 
 import java.io.Serializable;
 import java.sql.PreparedStatement;

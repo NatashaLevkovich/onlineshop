@@ -1,8 +1,5 @@
 package web.servlets;
 
-import entities.Dto.ProductDto;
-import entities.Order;
-import entities.User;
 import services.OrderService;
 import services.UserService;
 import services.impl.OrderServiceImpl;
@@ -15,8 +12,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @WebServlet("/download")
 public class DownloadController extends HttpServlet {

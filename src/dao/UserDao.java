@@ -1,9 +1,8 @@
-package DAO;
+package dao;
 
 import entities.User;
 
 import java.sql.SQLException;
-import java.util.List;
 
 public interface UserDao extends DAO<User> {
     int updatePassword(User user) throws SQLException;

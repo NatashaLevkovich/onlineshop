@@ -1,5 +1,5 @@
-import DAO.OrderDao;
-import DAO.impl.OrderDaoImpl;
+import dao.OrderDao;
+import dao.impl.OrderDaoImpl;
 import db.ConnectionDB;
 import entities.*;
 import org.junit.Assert;

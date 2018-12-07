@@ -1,6 +1,6 @@
-package DAO.impl;
+package dao.impl;
 
-import DAO.OrderDao;
+import dao.OrderDao;
 import entities.Order;
 import entities.Status;
 

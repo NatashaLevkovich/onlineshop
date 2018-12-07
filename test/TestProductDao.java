@@ -1,5 +1,5 @@
-import DAO.ProductDao;
-import DAO.impl.ProductDaoImpl;
+import dao.ProductDao;
+import dao.impl.ProductDaoImpl;
 import db.ConnectionDB;
 import entities.Product;
 import entities.ProductCategory;

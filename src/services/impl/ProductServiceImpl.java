@@ -1,13 +1,12 @@
 package services.impl;
 
-import DAO.ProductDao;
-import DAO.ProductSizeDao;
-import DAO.impl.ProductDaoImpl;
-import DAO.impl.ProductSizeDaoImpl;
+import dao.ProductDao;
+import dao.ProductSizeDao;
+import dao.impl.ProductDaoImpl;
+import dao.impl.ProductSizeDaoImpl;
 import entities.Product;
 import entities.ProductCategory;
 import entities.ProductSize;
-import entities.ProductSubcategory;
 import services.ProductService;
 
 import java.io.Serializable;

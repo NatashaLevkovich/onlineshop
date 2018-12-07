@@ -1,7 +1,7 @@
 package web.command.impl;
 
 import entities.*;
-import entities.Dto.ProductDto;
+import entities.dto.ProductDto;
 import services.*;
 import services.impl.*;
 import web.Encoder;
@@ -12,7 +12,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;

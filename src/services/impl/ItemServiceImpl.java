@@ -1,7 +1,7 @@
 package services.impl;
 
-import DAO.*;
-import DAO.impl.*;
+import dao.*;
+import dao.impl.*;
 import entities.*;
 import services.ItemService;
 import services.OrderService;

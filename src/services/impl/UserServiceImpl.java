@@ -1,10 +1,9 @@
 package services.impl;
 
-import DAO.OrderDao;
-import DAO.UserDao;
-import DAO.impl.OrderDaoImpl;
-import DAO.impl.UserDaoImpl;
-import entities.Order;
+import dao.OrderDao;
+import dao.UserDao;
+import dao.impl.OrderDaoImpl;
+import dao.impl.UserDaoImpl;
 import entities.User;
 import services.UserService;
 

@@ -1,8 +1,8 @@
 package services.impl;
 
 
-import DAO.ProductSizeDao;
-import DAO.impl.ProductSizeDaoImpl;
+import dao.ProductSizeDao;
+import dao.impl.ProductSizeDaoImpl;
 import entities.ProductSize;
 import services.ProductSizeService;
 import java.io.Serializable;

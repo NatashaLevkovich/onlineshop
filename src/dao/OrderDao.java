@@ -1,11 +1,8 @@
-package DAO;
+package dao;
 
-import entities.Item;
 import entities.Order;
 import entities.Status;
-import entities.User;
 
-import java.io.Serializable;
 import java.sql.SQLException;
 import java.util.List;
 

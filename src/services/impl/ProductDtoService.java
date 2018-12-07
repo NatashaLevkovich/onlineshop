@@ -1,7 +1,7 @@
 package services.impl;
 
-import DAO.Dto.ProductDtoDao;
-import entities.Dto.ProductDto;
+import dao.dto.ProductDtoDao;
+import entities.dto.ProductDto;
 
 import java.io.Serializable;
 import java.sql.SQLException;

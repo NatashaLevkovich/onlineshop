@@ -1,7 +1,7 @@
 package web.command.impl;
 
 import entities.*;
-import entities.Dto.ProductDto;
+import entities.dto.ProductDto;
 import services.*;
 import services.impl.*;
 import web.command.Controller;

@@ -1,8 +1,7 @@
-package DAO.impl;
+package dao.impl;
 
 import db.ConnectionDB;
 
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 

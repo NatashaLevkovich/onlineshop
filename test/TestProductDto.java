@@ -1,5 +1,5 @@
-import DAO.Dto.ProductDtoDao;
-import entities.Dto.ProductDto;
+import dao.dto.ProductDtoDao;
+import entities.dto.ProductDto;
 import org.junit.Assert;
 import org.junit.Test;
 

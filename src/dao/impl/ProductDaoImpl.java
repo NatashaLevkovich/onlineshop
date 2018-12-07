@@ -1,6 +1,6 @@
-package DAO.impl;
+package dao.impl;
 
-import DAO.ProductDao;
+import dao.ProductDao;
 import entities.Product;
 import entities.ProductCategory;
 import entities.ProductSubcategory;

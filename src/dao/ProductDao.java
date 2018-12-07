@@ -1,8 +1,7 @@
-package DAO;
+package dao;
 
 import entities.Product;
 import entities.ProductCategory;
-import entities.ProductSubcategory;
 
 import java.sql.SQLException;
 import java.util.List;

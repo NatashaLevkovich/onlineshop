@@ -1,6 +1,6 @@
-package DAO.impl;
+package dao.impl;
 
-import DAO.ProductSizeDao;
+import dao.ProductSizeDao;
 import entities.ProductSize;
 
 import java.io.Serializable;

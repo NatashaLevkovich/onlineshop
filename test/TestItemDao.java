@@ -1,5 +1,5 @@
-import DAO.ItemDao;
-import DAO.impl.ItemDaoImpl;
+import dao.ItemDao;
+import dao.impl.ItemDaoImpl;
 import db.ConnectionDB;
 import entities.Item;
 import org.junit.Assert;

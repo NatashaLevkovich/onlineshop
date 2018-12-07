@@ -1,6 +1,6 @@
-package DAO.impl;
+package dao.impl;
 
-import DAO.UserDao;
+import dao.UserDao;
 import entities.User;
 
 import java.io.Serializable;

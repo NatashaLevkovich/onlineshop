@@ -1,6 +1,6 @@
-package DAO.impl;
+package dao.impl;
 
-import DAO.ItemDao;
+import dao.ItemDao;
 import entities.Item;
 
 import java.io.Serializable;
