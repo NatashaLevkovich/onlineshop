@@ -13,7 +13,7 @@
             <span class="span3">на всю oбувь для новорожденных</span>
         </div>
         <span class="v_cat">
-    <a href="/shop?page=catalog"><fmt:message bundle="${i18n}" key="main.gotocat"/></a>
+    <a href="${pageContext.request.contextPath}/shop?page=catalog"><fmt:message bundle="${i18n}" key="main.gotocat"/></a>
     </span>
     </div>
 
@@ -37,11 +37,11 @@
         <c:forEach var="saleproduct" items="${saleproduct}" varStatus="status">
                 <div class="product-box-sale">
                     <img src="${saleproduct.image}">
-                    <h3><a href="/shop?page=product&id=${saleproduct.id}">${saleproduct.name}</a></h3>
+                    <h3><a href="${pageContext.request.contextPath}/shop?page=product&id=${saleproduct.id}">${saleproduct.name}</a></h3>
                     <p class="price"><fmt:formatNumber type="number" pattern="####.##" value="${saleproduct.price-(saleproduct.price*saleproduct.discount)}"/>
                         р.</p>
                     <p class="old-price">${saleproduct.price} р.</p>
-                    <a class="buy" href="/shop?page=product&id=${saleproduct.id}"> <span>В корзину</span></a>
+                    <a class="buy" href="${pageContext.request.contextPath}/shop?page=product&id=${saleproduct.id}"> <span>В корзину</span></a>
                     <p class="discount"><span>-${saleproduct.discount * 100}%</span></p>
                 </div>
         </c:forEach>
@@ -56,7 +56,7 @@
             <span class="span3">на костюмы супергероев</span>
         </div>
         <span class="v_cat">
-    <a href="/shop?page=catalog"><fmt:message bundle="${i18n}" key="main.gotocat"/></a>
+    <a href="${pageContext.request.contextPath}/shop?page=catalog"><fmt:message bundle="${i18n}" key="main.gotocat"/></a>
     </span>
     </div>
 
@@ -67,9 +67,9 @@
         <c:forEach var="product" items="${products}" varStatus="status" end="3">
             <div class="product-box">
                 <img src="${product.image}">
-                <h3><a href="/shop?page=product&id=${product.id}">${product.name}</a></h3>
+                <h3><a href="${pageContext.request.contextPath}/shop?page=product&id=${product.id}">${product.name}</a></h3>
                 <p class="price"><fmt:formatNumber type="number" pattern="####.##" value="${product.price -(product.price*product.discount)}"/> р.</p>
-                <a class="buy" href="/shop?page=product&id=${product.id}"><span>В корзину</span></a>
+                <a class="buy" href="${pageContext.request.contextPath}/shop?page=product&id=${product.id}"><span>В корзину</span></a>
                 <p class="new"><span>New</span></p>
             </div>
         </c:forEach>

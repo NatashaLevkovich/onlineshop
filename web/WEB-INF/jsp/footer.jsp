@@ -16,11 +16,11 @@
     </div>
 
     <div class="inf2">
-        <h4><a href="/shop?page=catalog"><fmt:message bundle="${i18n}" key="footer.catlog"/></a></h4>
+        <h4><a href="${pageContext.request.contextPath}/shop?page=catalog"><fmt:message bundle="${i18n}" key="footer.catlog"/></a></h4>
         <ul>
-            <li><a href="/shop?page=catalog&cat=boys"><fmt:message bundle="${i18n}" key="footer.cat2"/></a></li>
-            <li><a href="/shop?page=catalog&cat=girls"><fmt:message bundle="${i18n}" key="footer.cat3"/></a></li>
-            <li><a href="/shop?page=catalog&cat=newborn"><fmt:message bundle="${i18n}" key="footer.cat1"/></a></li>
+            <li><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=boys"><fmt:message bundle="${i18n}" key="footer.cat2"/></a></li>
+            <li><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=girls"><fmt:message bundle="${i18n}" key="footer.cat3"/></a></li>
+            <li><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=newborn"><fmt:message bundle="${i18n}" key="footer.cat1"/></a></li>
         </ul>
     </div>
 

@@ -50,7 +50,7 @@
             </tr>
         </c:forEach>
 
-        <form id="redactorproduct" action="/shop?page=admin&action=redactor" method="post">
+        <form id="redactorproduct" action="${pageContext.request.contextPath}/shop?page=admin&action=redactor" method="post">
 
             <tr class="redactor">
                 <td><input type="text" name="id" required></td>
@@ -85,7 +85,7 @@
 
         </form>
 
-        <form id="setproduct" action="/shop?page=admin&action=set" method="post">
+        <form id="setproduct" action="${pageContext.request.contextPath}/shop?page=admin&action=set" method="post">
             <tr>
                 <td></td>
                 <td><input type="text" name="name" required></td>
@@ -150,13 +150,13 @@
                     <td>${user.email}</td>
                     <td>${user.address}</td>
                     <td>${user.phoneNumber}</td>
-                    <td><a href="/download?file=order${order.id}.doc">Скачать заказ</a></td>
+                    <td><a href="${pageContext.request.contextPath}/download?file=order${order.id}.doc">Скачать заказ</a></td>
                 </c:if>
             </c:forEach>
         </tr>
         </c:forEach>
 
-        <form id="redactororder" action="/shop?page=admin&action=redactororder" method="post">
+        <form id="redactororder" action="${pageContext.request.contextPath}/shop?page=admin&action=redactororder" method="post">
 
             <tr class="redactororder">
                 <td><input type="text" name="id" required></td>
@@ -208,7 +208,7 @@
             </tr>
         </c:forEach>
 
-        <form id="redactoruser" action="/shop?page=admin&action=redactoruser" method="post">
+        <form id="redactoruser" action="${pageContext.request.contextPath}/shop?page=admin&action=redactoruser" method="post">
 
             <tr class="redactoruser">
                 <td><input type="text" name="id" required></td>
@@ -228,7 +228,7 @@
 
         </form>
 
-        <form id="setuser" action="/shop?page=admin&action=setuser" method="post">
+        <form id="setuser" action="${pageContext.request.contextPath}/shop?page=admin&action=setuser" method="post">
             <tr>
                 <td></td>
                 <td><input type="text" name="email" required></td>

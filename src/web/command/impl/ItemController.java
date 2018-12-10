@@ -37,7 +37,7 @@ public class ItemController implements Controller {
 
         if (session.getAttribute("user") == null) {
             session.setAttribute("notUser", true);
-            resp.sendRedirect("/shop?page=product&id=" + product.getId());
+            resp.sendRedirect(req.getContextPath() + "/shop?page=product&id=" + product.getId());
             return;
         } else {
             User user = (User) session.getAttribute("user");
@@ -49,7 +49,7 @@ public class ItemController implements Controller {
                     maxQuantity = map.getValue();
                     if (map.getValue() < quantity) {
                         session.setAttribute("error", "Недостаточно товара, в наличии " + map.getValue());
-                        resp.sendRedirect("/shop?page=product&id=" + product.getId());
+                        resp.sendRedirect(req.getContextPath() + "/shop?page=product&id=" + product.getId());
                         return;
                     }
                 }
@@ -58,7 +58,7 @@ public class ItemController implements Controller {
                 order = orderService.save(user.getId(), product.getId(), size, quantity);
                 session.setAttribute("items", 1);
                 session.setAttribute("productinfo", product);
-                resp.sendRedirect("/shop?page=product&id=" + product.getId());
+                resp.sendRedirect(req.getContextPath() + "/shop?page=product&id=" + product.getId());
                 return;
             }  else {
                 List<Item> items = order.getItems();
@@ -69,18 +69,18 @@ public class ItemController implements Controller {
                             itemService.update(item, order, quantity);
                             session.setAttribute("items", itemService.getItemsByOrder(order.getId()).size());
                             req.setAttribute("productinfo", product);
-                            resp.sendRedirect("/shop?page=product&id=" + product.getId());
+                            resp.sendRedirect(req.getContextPath() + "/shop?page=product&id=" + product.getId());
                             return;
                         } else {
                             req.setAttribute("error", "Недостаточно товара, в наличии " + maxQuantity);
-                            resp.sendRedirect("/shop?page=product&id=" + product.getId());
+                            resp.sendRedirect(req.getContextPath() + "/shop?page=product&id=" + product.getId());
                             return;
                         }
                     } else {
                         itemService.save(order, product.getId(), size, quantity);
                         session.setAttribute("items", itemService.getItemsByOrder(order.getId()).size());
                         session.setAttribute("productinfo", product);
-                        resp.sendRedirect("/shop?page=product&id=" + product.getId());
+                        resp.sendRedirect(req.getContextPath() + "/shop?page=product&id=" + product.getId());
                         return;
                     }
                 }

@@ -5,15 +5,15 @@
 
 <div class="main">
 
-    <p><a href="/shop?page=main">Главная</a> \ <a href="/shop?page=catalog">Каталог</a> </p>
+    <p><a href="${pageContext.request.contextPath}/shop?page=main">Главная</a> \ <a href="${pageContext.request.contextPath}/shop?page=catalog">Каталог</a> </p>
 
     <div class="left-menu">
         <h3>Категории</h3>
         <ul>
-            <li><a href="/shop?page=catalog&cat=boys">Одежда для мальчиков</a></li>
-            <li><a href="/shop?page=catalog&cat=girls">Одежда для девочек</a></li>
-            <li><a href="/shop?page=catalog&cat=newborn">Одежда для новороденных</a></li>
-            <%--<li><a href="/shop?page=catalog&cat=underwear">Нижнее белье</a></li>--%>
+            <li><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=boys">Одежда для мальчиков</a></li>
+            <li><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=girls">Одежда для девочек</a></li>
+            <li><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=newborn">Одежда для новороденных</a></li>
+            <%--<li><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=underwear">Нижнее белье</a></li>--%>
         </ul>
     </div>
 
@@ -38,9 +38,9 @@
 
             <div class="product-box">
                 <img src="${product.image}">
-                <h3><a href="/shop?page=product&id=${product.id}">${product.name}</a></h3>
+                <h3><a href="${pageContext.request.contextPath}/shop?page=product&id=${product.id}">${product.name}</a></h3>
                 <p class="price"><fmt:formatNumber type="number" pattern="####.##" value="${product.price -(product.price*product.discount)}"/> р.</p>
-                <a class="buy" href="/shop?page=product&id=${product.id}"><span>Купить</span></a>
+                <a class="buy" href="${pageContext.request.contextPath}/shop?page=product&id=${product.id}"><span>Купить</span></a>
             </div>
         </c:forEach>
 

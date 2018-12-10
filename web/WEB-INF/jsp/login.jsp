@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="main">
     <h2>Добро пожаловать!</h2>
-    <form id="login-form" action="/shop?page=login" method="post">
+    <form id="login-form" action="${pageContext.request.contextPath}/shop?page=login" method="post">
         <p>E-mail</p>
         <c:set scope="request" var="error" value="${error}"/>
         <c:out value="${error}"/>

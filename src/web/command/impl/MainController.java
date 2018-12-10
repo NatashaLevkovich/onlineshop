@@ -22,7 +22,7 @@ public class MainController implements Controller {
         if ("off".equalsIgnoreCase(logout)){
             HttpSession session = req.getSession();
             session.removeAttribute("user");
-            resp.sendRedirect("/shop?page=main");
+            resp.sendRedirect(req.getContextPath() + "/shop?page=main");
             return;
         }
         req.setAttribute("products",  productService.getAll());

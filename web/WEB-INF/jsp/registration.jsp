@@ -5,7 +5,7 @@
         <c:set var="reg" scope="request" value="${registration}"/>
         <c:out value="${reg}"/>
 
-        <form id="registration-form" action="/shop?page=registration" method="post">
+        <form id="registration-form" action="${pageContext.request.contextPath}/shop?page=registration" method="post">
         <p>E-mail:</p>
         <input type="email" name="email" requared>
         <p>Пароль:</p>

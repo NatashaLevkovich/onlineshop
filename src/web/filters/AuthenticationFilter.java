@@ -27,7 +27,7 @@ public class AuthenticationFilter implements Filter {
         if (ControllerType.PRODUCT.equals(type)) {
 
             if ((session.getAttribute("user") == null)) {
-                resp.sendRedirect("/shop?page=login");
+                resp.sendRedirect(req.getContextPath() + "/shop?page=login");
                 return;
             }
         }

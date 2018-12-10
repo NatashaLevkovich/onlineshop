@@ -11,7 +11,7 @@
     <p>${productinfo.name}</p>
     <p>Цена: <fmt:formatNumber type="number" pattern="####.##" value="${productinfo.price -(productinfo.price*productinfo.discount)}"/> р.</p>
     <p>Размер:
-        <form id="add-product" action="/shop?page=item&id=${productinfo.id}" method="post">
+        <form id="add-product" action="${pageContext.request.contextPath}/shop?page=item&id=${productinfo.id}" method="post">
     <c:forEach var="size" items="${productinfo.sizeAndQuantity}" >
        <input type="radio" value="${size.key}" name="size" required>${size.key}
     </c:forEach>

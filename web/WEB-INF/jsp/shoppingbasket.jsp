@@ -28,7 +28,7 @@
             <p>Скидка: ${productDto.discount}</p>
             <p>Итого: <fmt:formatNumber type="number" pattern="####.##"
                                  value="${((productDto.price -(productDto.price*productDto.discount)) * productDto.quantity)}"/> р.</p>
-            <a href="/shop?page=shoppingbasket&action=del&id=${productDto.itemId}">Удалить</a>
+            <a href="${pageContext.request.contextPath}/shop?page=shoppingbasket&action=del&id=${productDto.itemId}">Удалить</a>
             <p>------------------------------------------</p>
         </c:forEach>
     </div>
@@ -36,7 +36,7 @@
     <c:set var="order" value="${order}" scope="request"></c:set>
     <div class="order">
         <p>Сумма заказа: ${order.totalPrice}</p>
-        <a href="/shop?page=orders&orderId=${order.id}">Оформить заказ</a>
+        <a href="${pageContext.request.contextPath}/shop?page=orders&orderId=${order.id}">Оформить заказ</a>
     </div>
 
 </div>

@@ -8,7 +8,7 @@
 
     <div class="header-top">
 
-        <div class="logo"><a href="/shop?page=main">
+        <div class="logo"><a href="${pageContext.request.contextPath}/shop?page=main">
             <span class="baby_sh">BABY SH</span>
             <img src="image/logo.png">
             <span class="p">P</span></a>
@@ -26,19 +26,19 @@
         <div>
             <c:if test="${empty user}">
                 <div class="si-in">
-                    <p class="in"><a href="/shop?page=login"><fmt:message bundle="${i18n}"
+                    <p class="in"><a href="${pageContext.request.contextPath}/shop?page=login"><fmt:message bundle="${i18n}"
                                                                                 key="header.signin"/></a></p>
                     <span class="line_h"></span>
-                    <p class="reg"><a href="/shop?page=registration"><fmt:message bundle="${i18n}"
+                    <p class="reg"><a href="${pageContext.request.contextPath}/shop?page=registration"><fmt:message bundle="${i18n}"
                                                                                   key="header.reg"/></a></p>
                 </div>
             </c:if>
 
             <c:if test="${not empty user}">
                 <div class="logout">
-                    <p class="in_mail"><a href="/shop?page=orders">${user.email}</a></p>
+                    <p class="in_mail"><a href="${pageContext.request.contextPath}/shop?page=orders">${user.email}</a></p>
                     <span class="line_h1"></span>
-                    <p class="out"><a href="/shop?page=main&logout=off"><fmt:message bundle="${i18n}" key="header.logout"/></a></p>
+                    <p class="out"><a href="${pageContext.request.contextPath}/shop?page=main&logout=off"><fmt:message bundle="${i18n}" key="header.logout"/></a></p>
                 </div>
             </c:if>
 
@@ -57,7 +57,7 @@
                     <input type="button" class="button_login"
                            value="<fmt:message bundle="${i18n}" key="header.signin2"/>"/>
                 </form>
-                <a class="registration" href="/shop?page=registration"><fmt:message bundle="${i18n}"
+                <a class="registration" href="${pageContext.request.contextPath}/shop?page=registration"><fmt:message bundle="${i18n}"
                                                                                     key="header.reg"/></a>
                 <a class="remember" href="#"><fmt:message bundle="${i18n}" key="header.forgot"/></a>
             </div>
@@ -85,7 +85,7 @@
             <div class="Sh_c">
                 <p class="e_shop"><fmt:message bundle="${i18n}" key="header.onshop"/></p>
                 <c:if test="${not empty user}">
-                    <a href="/shop?page=shoppingbasket">
+                    <a href="${pageContext.request.contextPath}/shop?page=shoppingbasket">
                         <span class="basket"><fmt:message bundle="${i18n}" key="header.basket"/></span>
                         <img class="basket-img" src="image/baseline_shopping_basket_black_18dp.png"/>
                         <span class="ellipse"></span>
@@ -107,14 +107,14 @@
     <div class="menu">
 
         <ul>
-            <li class="select_menu"><a href="/shop?page=main"><fmt:message bundle="${i18n}" key="header.main"/></a></li>
-            <li class="catalog"><a href="/shop?page=catalog"><fmt:message bundle="${i18n}" key="header.catalog"/></a>
+            <li class="select_menu"><a href="${pageContext.request.contextPath}/shop?page=main"><fmt:message bundle="${i18n}" key="header.main"/></a></li>
+            <li class="catalog"><a href="${pageContext.request.contextPath}/shop?page=catalog"><fmt:message bundle="${i18n}" key="header.catalog"/></a>
             </li>
             <div class="submenu">
                 <ul class="select">
-                    <li class="for-boys"><a href="/shop?page=catalog&cat=boys"><fmt:message bundle="${i18n}" key="header.cat2"/></a></li>
-                    <li class="for-girls"><a href="/shop?page=catalog&cat=girls"><fmt:message bundle="${i18n}" key="header.cat3"/></a></li>
-                    <li class="for-newborn"><a href="/shop?page=catalog&cat=newborn"><fmt:message bundle="${i18n}" key="header.cat1"/></a></li>
+                    <li class="for-boys"><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=boys"><fmt:message bundle="${i18n}" key="header.cat2"/></a></li>
+                    <li class="for-girls"><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=girls"><fmt:message bundle="${i18n}" key="header.cat3"/></a></li>
+                    <li class="for-newborn"><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=newborn"><fmt:message bundle="${i18n}" key="header.cat1"/></a></li>
                     <%--<li><a href="#">Нижнее белье</a></li>--%>
                 </ul>
             </div>
@@ -123,7 +123,7 @@
             <li class="pay"><a href="#"><fmt:message bundle="${i18n}" key="header.pay"/></a></li>
             <li class="about-us"><a href="#"><fmt:message bundle="${i18n}" key="header.us"/></a></li>
             <c:if test="${not empty user and user.status eq 'admin'}">
-                <li class="admin"><a href="/shop?page=admin">Страница администратора</a></li>
+                <li class="admin"><a href="${pageContext.request.contextPath}/shop?page=admin">Страница администратора</a></li>
             </c:if>
             <li class="ru"><a href="${path}&amp;locale=ru">RU</a></li>
             <li class="en"><a href="${path}&amp;locale=en">EN</a></li>
