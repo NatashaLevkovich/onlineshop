@@ -108,8 +108,7 @@
 
         <ul>
             <li class="select_menu"><a href="${pageContext.request.contextPath}/shop?page=main"><fmt:message bundle="${i18n}" key="header.main"/></a></li>
-            <li class="catalog"><a href="${pageContext.request.contextPath}/shop?page=catalog"><fmt:message bundle="${i18n}" key="header.catalog"/></a>
-            </li>
+            <li class="catalog"><a href="${pageContext.request.contextPath}/shop?page=catalog"><fmt:message bundle="${i18n}" key="header.catalog"/></a></li>
             <div class="submenu">
                 <ul class="select">
                     <li class="for-boys"><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=boys"><fmt:message bundle="${i18n}" key="header.cat2"/></a></li>
