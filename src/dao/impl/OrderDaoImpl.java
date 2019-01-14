@@ -135,7 +135,7 @@ public class OrderDaoImpl extends AbstractDao implements OrderDao {
             if (s != null) {
                 String[] strings = s.split("-");
                 if (strings.length == 3) {
-                    calendar.set(Integer.parseInt(strings[0]), Integer.parseInt(strings[1]), Integer.parseInt(strings[2]));
+                    calendar.set(Integer.parseInt(strings[0]), Integer.parseInt(strings[1]) - 1, Integer.parseInt(strings[2]));
                     order.setOrderDate(calendar);
                 } else {
                     order.setOrderDate(calendar);
