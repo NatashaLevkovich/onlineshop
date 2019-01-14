@@ -245,17 +245,6 @@ li {
 
 }
 
-.product-box-s .buy {
-    border-radius: 4px;
-    background-color: rgb(219, 157, 57);
-    position: absolute;
-    left: 150px;
-    top: 250px;
-    width: 116px;
-    height: 42px;
-
-}
-
 .product-box-s .buy span {
     font-size: 14px;
     font-family: "Myriad Pro";
@@ -269,6 +258,19 @@ li {
     height: 12px;
 
 }
+
+
+.product-box-s .buy {
+    border-radius: 4px;
+    background-color: rgb(219, 157, 57);
+    position: absolute;
+    left: 150px;
+    top: 250px;
+    width: 116px;
+    height: 42px;
+
+}
+
 
 .pagination {
     position: relative;
