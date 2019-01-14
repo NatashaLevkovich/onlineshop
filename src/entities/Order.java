@@ -89,7 +89,7 @@ public class Order {
 
     public String getOrderDateToString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(orderDate.get(1)).append("-").append(orderDate.get(2)).append("-").append(orderDate.get(5));
+        sb.append(orderDate.get(1)).append("-").append((orderDate.get(2)+1)).append("-").append(orderDate.get(5));
         return sb.toString();
     }
 
