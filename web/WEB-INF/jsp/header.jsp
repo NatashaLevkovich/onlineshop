@@ -42,40 +42,6 @@
                 </div>
             </c:if>
 
-            <div class="login">
-                <a href="javascript:LoginHide()"><img src="image/baseline_clear_black_18dp.png"/></a>
-                <h2><fmt:message bundle="${i18n}" key="header.welcome"/></h2>
-                <h3><fmt:message bundle="${i18n}" key="header.enter"/></h3>
-                <p id="error">Неверный логин или пароль</p>
-                <form id="login_form" action="">
-                    <div class="lo">
-                        <input class="mail" type="email" name="email">
-                    </div>
-                    <div class="par">
-                        <input class="pass" type="password" name="password">
-                    </div>
-                    <input type="button" class="button_login"
-                           value="<fmt:message bundle="${i18n}" key="header.signin2"/>"/>
-                </form>
-                <a class="registration" href="${pageContext.request.contextPath}/shop?page=registration"><fmt:message bundle="${i18n}"
-                                                                                    key="header.reg"/></a>
-                <a class="remember" href="#"><fmt:message bundle="${i18n}" key="header.forgot"/></a>
-            </div>
-
-
-            <%--<div>--%>
-            <%--<c:choose>--%>
-            <%--<c:when test="${not empty user}">--%>
-            <%--<p class="logout"><a href="#">${user.email}</a> | <a href="/shop?page=main&logout=off">Выйти</a></p>--%>
-            <%--</c:when>--%>
-            <%--<c:otherwise>--%>
-            <%--&lt;%&ndash;<p class="registration"><a href="/shop?page=login">Вход</a> | <a href="/shop?page=registration">Регистрация</a></p>&ndash;%&gt;--%>
-
-            <%----%>
-            <%--</c:otherwise>--%>
-            <%--</c:choose>--%>
-            <%--</div>--%>
-
             <c:set value="${items}" var="itemscount" scope="session"/>
 
             <c:if test="${empty itemscount}">
@@ -92,14 +58,6 @@
                         <span class="count_item">${itemscount}</span>
                     </a>
                 </c:if>
-                <%--<c:if test="${empty user}">--%>
-                <%--<a href="javascript:LoginShow()">--%>
-                <%--<span class="basket">Корзина</span>--%>
-                <%--<img class="basket-img" src="image/baseline_shopping_basket_black_18dp.png"/>--%>
-                <%--<span class="ellipse"></span>--%>
-                <%--<span class="count_item">${itemscount}</span>--%>
-                <%--</a>--%>
-                <%--</c:if>--%>
             </div>
         </div>
     </div>
@@ -114,7 +72,6 @@
                     <li class="for-boys"><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=boys"><fmt:message bundle="${i18n}" key="header.cat2"/></a></li>
                     <li class="for-girls"><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=girls"><fmt:message bundle="${i18n}" key="header.cat3"/></a></li>
                     <li class="for-newborn"><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=newborn"><fmt:message bundle="${i18n}" key="header.cat1"/></a></li>
-                    <%--<li><a href="#">Нижнее белье</a></li>--%>
                 </ul>
             </div>
             </li>

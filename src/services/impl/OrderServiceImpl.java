@@ -54,11 +54,9 @@ public class OrderServiceImpl extends AbstractService implements OrderService {
             order.setStatus(Status.NEW);
             orderDao.save(order);
             if (product.getDiscount() > 0) {
-//                double price = (product.getDiscount() - (product.getDiscount() * product.getDiscount()) * quantity);
                 Item item = new Item(productId, productSize, order.getId(), quantity, product.getDiscount());
                 itemDao.save(item);
             } else {
-//                double price = (product.getDiscount() - (product.getDiscount() * user.getDiscount()) * quantity);
                 Item item = new Item(productId, productSize, order.getId(), quantity, product.getDiscount());
                 itemDao.save(item);
             }

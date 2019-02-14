@@ -116,24 +116,6 @@ public class UserServiceImpl extends AbstractService implements UserService {
         int i = 0;
         try {
             userDao.setDiscount(user);
-//            List<Order> orders = orderDao.getOrdersByUser(user.getId());
-//            double sum = 0;
-//            for (Order o : orders) {
-//                sum += o.getTotalPrice();
-//            }
-//            if (sum > 1000 && sum < 2000) {
-//                user.setDiscount(0.05);
-//                i = userDao.setDiscount(user);
-//            } else if (sum > 2000 && sum < 4000) {
-//                user.setDiscount(0.07);
-//                i = userDao.setDiscount(user);
-//            } else if (sum > 4000) {
-//                user.setDiscount(0.1);
-//                i = userDao.setDiscount(user);
-//            } else {
-//                user.setDiscount(0);
-//                i = userDao.setDiscount(user);
-//            }
         } catch (SQLException e) {
 
             System.out.println("Ошибка добавления скидки");

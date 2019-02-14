@@ -14,7 +14,6 @@
             <li><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=girls">Одежда для девочек</a></li>
             <li><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=newborn">Одежда для новороденных</a>
             </li>
-            <%--<li><a href="${pageContext.request.contextPath}/shop?page=catalog&cat=underwear">Нижнее белье</a></li>--%>
         </ul>
     </div>
 

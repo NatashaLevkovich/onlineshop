@@ -50,25 +50,4 @@ public class LoginController implements Controller {
             dispatcher.forward(req, resp);
         }
     }
-//        String email = req.getParameter("email");
-//        String password = req.getParameter("password");
-//        if (email == null || password == null) {
-//            String s = "Введите данные";
-//
-//            return;
-//        }
-//
-//        User user = userService.getUserByEmail(email);
-//
-//        if (user != null && password.equals(user.getPassword())) {
-//            req.getSession().setAttribute("user", user);
-//            PrintWriter writer = resp.getWriter();
-//            writer.write(new Gson().toJson(user));
-//            return;
-//        } else {
-//         //   String err = "Неверный логин или пароль";
-//            PrintWriter writer = resp.getWriter();
-//            writer.write(new Gson().toJson(new User()));
-//        }
-
 }

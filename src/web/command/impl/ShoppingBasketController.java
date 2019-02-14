@@ -24,11 +24,6 @@ public class ShoppingBasketController implements Controller {
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         HttpSession session = req.getSession();
-//        if (session.getAttribute("user") == null) {
-//            session.setAttribute("notUser", true);
-//            resp.sendRedirect("/shop?page=shoppingbasket");
-//            return;
-//        }
         User user = (User) session.getAttribute("user");
         Order order = orderService.getOrdersByUserAndStatus(user.getId(), Status.NEW);
         String action = req.getParameter("action");

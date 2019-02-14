@@ -1,4 +1,6 @@
-use schema onlineshop;
+CREATE schema onlineshop;
+
+use onlineshop;
 
 CREATE TABLE USER (ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 EMAIL VARCHAR (40) UNIQUE,

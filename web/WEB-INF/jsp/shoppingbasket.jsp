@@ -4,15 +4,6 @@
 
 <div class="main">
 
-    <%--<c:if test="${notUser == true}">--%>
-        <%--<script>--%>
-            <%--$(document).ready(function () {--%>
-                <%--LoginShow();--%>
-            <%--});--%>
-        <%--</script>--%>
-    <%--</c:if>--%>
-    <%--<% session.removeAttribute("notUser"); %>--%>
-
     <h2>Корзина</h2>
 
     <div class="item">
